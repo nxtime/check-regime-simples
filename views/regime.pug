@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Regime
+  p Carregando dados de #{qty} empresas
+    - for (var i = 0; i < qty; i++)
+        ul 
+            - for (var key in data[i])
+                li=data[i][key] 
